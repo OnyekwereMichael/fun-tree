@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,700;1,700&family=Ubuntu:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: ubuntu;
+    overflow-x: hidden;
+background-color: green;
+}
+
+img{
+    max-width: 100%;
+}
+
+.flexbox, .flex2{
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+     padding: 20px;   
+}
+
+.card{
+    background-color:  #359381;
+    width: 220px;
+    margin: 30px;
+    box-sizing: border-box;
+    height: 90%;
+    border-radius: 5px;
+    border: 2px  black;
+    box-shadow: 0px 0px 5px 5px #fff;
+  
+}
+
+
+.img1{
+    background: url("./pineapples-uganda-1160x665.jpg");
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    
+}
+.img2{
+    background: url("./marula-fruit-on-ground-786x500.jpg");
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    
+}
+.img3{
+    background: url("./whenisfruitr.jpg");
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    
+}
+.img4{
+    background: url("./Apricots-and-cliffs-Johnson-Orchard-7-17-19-JM.jpg");
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    
+}
+
+h2{
+    text-align: center;
+    margin-top: 10px  ;
+}
+h1{
+    text-align: center;
+
+}
+
+@media screen and (max-width: 500px) {
+    .flexbox{
+       padding-left: 15%;
+    }
+}
+
+

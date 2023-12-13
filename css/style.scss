@@ -1,0 +1,258 @@
+
+@import "variables";
+@import "mixin";
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  
+    font-family: $font-family;
+    overflow-x: hidden;
+    width: $width;
+    height: $height;
+}
+
+img{
+    max-width: 100%;
+}
+
+
+
+
+header{
+    background-color: map-get($color,  "white");
+ @include flexer();
+    align-items: center;
+    padding: 20px;
+}
+
+       li{
+        list-style-type: none;
+        display: inline-block;
+    }
+
+    #text{
+        font-size: 4rem;
+        @include posti();
+        top: 50%;
+        left: 25%;
+        color: map-get($color , "white");
+        animation: slide 3s  infinite ease-in-out forwards alternate-reverse;
+    }
+
+    h2{
+        color: map-get($color , "green" );
+    }
+    .parallex img{
+        @include posti();
+        top: 0;
+        left:0;
+    
+
+        }
+
+        
+@keyframes slide {
+    0%{
+        background-position: 60%;
+    }
+    100%{
+        background-position: 0;
+        color: #03473b;
+    }
+}
+    
+
+
+.header__li1, .header__li2{
+    color: map-get($color , "green" );
+    font-weight: 700;
+    font-size: $font-size;
+    margin-left: 35px;
+   }
+
+   .form{
+    width: $width;
+    height: $height;
+    background-color: #0e3d35;
+    background-size: cover;
+   @include grider();
+ @include posti();
+    top:  200%; 
+  padding: 20%;
+  padding-left: 26%;
+ background-color: #62ccb9;
+  background-attachment: fixed;
+
+  .num1{
+   padding: 6%;
+   margin: 10px;
+}
+
+
+h4{
+    @include posti();
+    left: 35%;
+    top:10%;
+    font-size: $regis-font-size;
+    font-weight: $font-weight;
+    
+   }
+
+}
+
+
+
+
+label{
+    @include posti();
+   bottom: 20%;
+   left: 25%;
+   color: map-get($color, "white" );
+   font-weight: $font-weight;
+}
+
+
+button{
+    background-color: map-get($color, "green" );
+    width: 30vw;
+    height: 5%;
+    text-align: center;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    @include posti();
+    bottom: 10%;
+    left: 35%;
+}
+
+.two{
+width: $width;
+height: $height;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+gap: 1rem;
+ @include posti();
+top: 100%;
+padding-top: 40px;
+padding-left: 5px;
+padding-right: 5px;
+animation: side 20s infinite linear alternate-reverse;
+animation-duration: 4s;
+color: map-get($color, "white");
+background-color: #03473b;
+font-weight: $font-weight;
+font-size: 15px;
+background-attachment: fixed;
+
+
+   @keyframes side {
+    0%{
+        background-position: 0%;
+    }
+
+    100%{
+        background-position: 30%;
+     
+    }
+   }
+
+   h3{
+    @include posti();
+bottom: 100%;
+font-weight: $font-weight;
+font-size: $regis-font-size;
+   }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+   
+
+    header{
+        align-items: normal;
+
+
+        header > div{
+            display: none;
+        }
+    
+        #text{
+            top: 20%;
+            left: 20%;
+          font-size: 1.5rem; 
+        }
+        #hill1, #hill2, #hill3, #hill4, #hill5, #hill6, #text{
+            height: 40%;
+          } 
+          .header__li1, .header__li2{
+       display: none;
+        }
+    
+      
+    }
+
+
+
+
+.two{
+    grid-template-columns: 1fr;
+    padding: 10px;
+    top:40%
+}
+
+button{
+    height: 1%;
+    bottom: 3%;
+   padding: 20px;
+   padding-right: none;
+   padding-left: none;
+ background-color: #359381;
+}
+
+
+.form{
+    gap: 0.5rem;
+    top: 140%;
+    
+    
+    h4{
+    top:2%;
+    left: 20%;
+    }
+    label{
+        bottom: 13%;
+        left: 13%;
+    }
+    }
+    
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
